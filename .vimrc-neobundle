@@ -39,15 +39,10 @@ NeoBundle 'Shougo/neosnippet-snippets',   { 'rev': '1dcfdff' }
 NeoBundle 'ctrlpvim/ctrlp.vim',           { 'rev': 'b5d3fe6' }
 NeoBundle 'vim-php/phpctags',             {
 \  'rev': 'v0.5.1',
-\  'build_commands': {
-\    'linux': 'make',
-\    'mac': 'make',
-\    'unix': 'gmake'
-\  },
+\  'build_commands': 'make',
 \  'build': {
 \    'linux': 'make',
 \    'mac': 'make',
-\    'unix': 'gmake'
 \  }
 \}
 NeoBundle 'vim-php/tagbar-phpctags.vim',  {
