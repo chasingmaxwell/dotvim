@@ -1,0 +1,21 @@
+From e12f341d36a5deb2b869d94f4043c1a450fd7f56 Mon Sep 17 00:00:00 2001
+From: kostajh
+Date: Sun, 01 Jun 2014 21:01:12 +0000
+Subject: Issue #2125097 by kostajh: Enable Drupal code style checker for php.drupal files only
+
+---
+diff --git a/bundle/vim-plugin-for-drupal/ftplugin/drupal.vim b/bundle/vim-plugin-for-drupal/ftplugin/drupal.vim
+index 583bbd0..a38ece4 100644
+--- a/bundle/vim-plugin-for-drupal/ftplugin/drupal.vim
++++ b/bundle/vim-plugin-for-drupal/ftplugin/drupal.vim
+@@ -59,7 +59,7 @@ if &ft =~ '\<php\>'
+   " Syntastic settings, adapted from
+   " echodittolabs.org/drupal-coding-standards-vim-code-sniffer-syntastic-regex
+   if exists('loaded_syntastic_plugin') && executable('phpcs')
+-    let g:syntastic_phpcs_conf = ' --standard=Drupal ' . drupaldetect#php_ext
++    let g:syntastic_php_phpcs_args = '--standard=Drupal --report=csv --extensions=' . drupaldetect#php_ext
+   endif
+ 
+   " Cf. comment on 'tags':  'ignorecase' is global.
+--
+cgit v0.9.2

@@ -1,0 +1,91 @@
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim',    {
+\  'directory': 'neobundle.vim',
+\  'rev': 'e4e6766'
+\}
+
+" Add or remove your Bundles here:
+NeoBundle 'vim-scripts/AutoClose',        { 'rev': '1.2' }
+NeoBundle 'jlanzarotta/bufexplorer',      { 'rev': 'v7.4.6' }
+NeoBundle 'vim-scripts/grep.vim',         { 'rev': '1.11' }
+NeoBundle 'tomasr/molokai',               { 'rev': 'db8ce13' }
+NeoBundle 'Shougo/neocomplcache.vim',     { 'rev': 'd83bcbd' }
+NeoBundle 'scrooloose/nerdcommenter',     { 'rev': '6549cfd' }
+NeoBundle 'scrooloose/nerdtree',          { 'rev': '3b98a7f' }
+NeoBundle 'StanAngeloff/php.vim',         { 'rev': 'd9be2fa' }
+NeoBundle 'scrooloose/syntastic',         { 'rev': 'b340672' }
+NeoBundle 'majutsushi/tagbar',            { 'rev': 'bfc121d' }
+NeoBundle 'joonty/vdebug',                { 'rev': 'b808b02' }
+NeoBundle 'hail2u/vim-css3-syntax',       { 'rev': '73ba250' }
+NeoBundle 'tpope/vim-fugitive',           { 'rev': '2c8461d' }
+NeoBundle 'tpope/vim-sensible',           { 'rev': 'b30dcf3' }
+NeoBundle 'mhinz/vim-signify',            { 'rev': 'ae0efff' }
+NeoBundle 'Shougo/neosnippet.vim',        { 'rev': '811176b' }
+NeoBundle 'Shougo/neosnippet-snippets',   { 'rev': '1dcfdff' }
+NeoBundle 'ctrlpvim/ctrlp.vim',           { 'rev': 'b5d3fe6' }
+NeoBundle 'vim-php/phpctags',             {
+\  'rev': 'v0.5.1',
+\  'build_commands': {
+\    'linux': 'make',
+\    'mac': 'make',
+\    'unix': 'gmake'
+\  },
+\  'build': {
+\    'linux': 'make',
+\    'mac': 'make',
+\    'unix': 'gmake'
+\  }
+\}
+NeoBundle 'vim-php/tagbar-phpctags.vim',  {
+\  'rev': 'v0.5.1',
+\  'depends': 'vim-php/phpctags'
+\}
+NeoBundle 'http://git.drupal.org/project/vimrc.git', {
+\  'name': 'drupal-vimrc',
+\  'rev': '7.x-1.0',
+\  'rtp': 'bundle/vim-plugin-for-drupal',
+\  'depends': 'vim-php/phpctags',
+\  'build_commands': 'git',
+\  'build': {
+\    'linux': 'git apply ~/.vim/patches/drupal-vimrc/e12f341d36a5deb2b869d94f4043c1a450fd7f56.patch',
+\    'mac': 'git apply ~/.vim/patches/drupal-vimrc/e12f341d36a5deb2b869d94f4043c1a450fd7f56.patch',
+\    'unix': 'git apply ~/.vim/patches/drupal-vimrc/e12f341d36a5deb2b869d94f4043c1a450fd7f56.patch',
+\    'cygwin': 'git apply ~/.vim/patches/drupal-vimrc/e12f341d36a5deb2b869d94f4043c1a450fd7f56.patch',
+\    'windows': 'git apply ~/.vim/patches/drupal-vimrc/e12f341d36a5deb2b869d94f4043c1a450fd7f56.patch'
+\  }
+\}
+NeoBundle 'Shougo/vimproc.vim', {
+\  'rev': '9848267',
+\  'build' : {
+\    'windows' : 'tools\\update-dll-mingw',
+\    'cygwin' : 'make -f make_cygwin.mak',
+\    'mac' : 'make -f make_mac.mak',
+\    'linux' : 'make',
+\    'unix' : 'gmake'
+\  }
+\}
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------

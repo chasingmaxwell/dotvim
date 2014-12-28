@@ -1,0 +1,5 @@
+.netrwhist
+sessions
+.vimrc-private
+bundle/*
+!.gitkeep
