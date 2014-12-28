@@ -17,6 +17,7 @@ you should move it to ~/.vim-old before completing this step.
   ```
   git clone git@github.com:chasingmaxwell/dotvim.git ~/.vim
   ```
+
 2. Open vim or gvim. You may see a few error messages because plugins aren't
 installed yet. You won't see those anymore after neobundle does its thing.
 
