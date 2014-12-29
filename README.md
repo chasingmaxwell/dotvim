@@ -95,7 +95,7 @@ here:
 
 Here's an example of what your .vimrc-private might look like:
 
-```
+```VimL
 "
 " Private Vim Configuration
 " =========================
