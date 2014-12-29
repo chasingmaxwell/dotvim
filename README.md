@@ -81,3 +81,43 @@ library for vim.
 default configuration for vim.
 23. [vim-signify](https://github.com/mhinz/vim-signify) - Indicate changed lines
 in version-controlled files.
+
+## Private configuration
+
+You can set private configuration in .vimrc-private which is not tracked by git.
+There are two variables in particular that are used by .vimrc and useful to set
+here:
+
+- g:private_vdebug_server - The address of the remote server for which you'd
+  like to utilize step debugging with Vdebug.
+- g:private_vdebug_path_maps - The path mapping between the remote server and
+  local file system when step debugging with Vdebug.
+
+Here's an example of what your .vimrc-private might look like:
+
+```
+"
+" Private Vim Configuration
+" =========================
+
+" Vdebug Servers
+let s:server_one='192.168.1.5'
+let s:server_two='192.168.1.6'
+
+" Set the value of vdebug_server to whatever above server you will be
+" debugging.
+let g:private_vdebug_server=s:server_one
+
+" Vdebug Paths
+let g:private_vdebug_path_maps={
+\  "/home/remote_user/www": "/home/" . $USER . "/www"
+\}
+
+" Use phpmd ruleset for Drupal.
+let g:syntastic_php_phpmd_post_args='/home/' . $USER . '/.phpmd/drupal-ruleset.xml'
+
+" Run rsync when saving a file in specific directories.
+augroup rsyncTestServer
+  au! BufWritePost ~/www/some_project/* call RsyncTestServer(s:server_one, "~/www/some_project/", "/home/remote_user/www/some_project/", "~/www/some_project/rsyncExclude")
+augroup END
+```  
