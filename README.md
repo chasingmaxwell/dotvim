@@ -2,7 +2,7 @@
 
 This is my ~/.vim directory containing vim configuration primarily for working
 in JavaScript, PHP, and Drupal. Feel free to use it! If you do, please find ways
-to make it better and contribute it back!
+to make it better and contribute back!
 
 ![chasingmaxwell dotvim screenshot](/screenshot.png?raw=true "Schreenshot")
 
