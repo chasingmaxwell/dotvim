@@ -17,17 +17,26 @@ you should move it to ~/.vim-old before completing this step.
   ```
   git clone git@github.com:chasingmaxwell/dotvim.git ~/.vim
   ```
-2. Open vim or gvim. You may see a few error messages because plugins aren't
-installed yet. You won't see those anymore after neobundle does its thing.
 
-3. When prompted to install bundles, enter "y" (or click "Yes" in gvim).
+2. Run the build script.
+  ```
+  ~/.vim/build
+  ```
 
-4. Close vim or gvim.
+3. Open vim or gvim. You may see a few error messages because plugins aren't
+installed yet. You won't see them anymore after NeoBundle does its thing.
 
-5. Edit your ~/.bashrc file and add the following line:
+4. When prompted to install bundles, enter "y" (or click "Yes" in gvim).
+
+5. Close vim or gvim.
+
+6. Edit your ~/.bashrc file and add the following line:
   ```
   PATH=$PATH:$HOME/.vim/bundle/phpctags_v0_5_1
   ```
+
+You're all set! The next time you open vim or gvim the below plugins will be
+installed and ready to use.
 
 ## Plugins used
 
