@@ -36,7 +36,7 @@ let g:vdebug_options= {
 \  'server' : g:private_vdebug_server,
 \  'timeout' : 60,
 \  'on_close' : 'detach',
-\  'break_on_open' : 1,
+\  'break_on_open' : 0,
 \  'ide_key' : '',
 \  'path_maps' : g:private_vdebug_path_maps,
 \  'debug_window_level' : 0,
