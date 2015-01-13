@@ -28,12 +28,9 @@ installed yet. You won't see them anymore after NeoBundle does its thing.
 
 4. When prompted to install bundles, enter "y" (or click "Yes" in gvim).
 
-5. Close vim or gvim.
-
-6. Edit your ~/.bashrc file and add the following line:
-  ```
-  PATH=$PATH:$HOME/.vim/bundle/phpctags_v0_5_1
-  ```
+5. If you are using a shell other than bash, add `~/.vim/bundle/phpctags_v0_5_1`
+to your PATH. If you are using bash, this was done for you when you ran the
+build script.
 
 You're all set! The next time you open vim or gvim the below plugins will be
 installed and ready to use.

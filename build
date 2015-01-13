@@ -1,9 +1,20 @@
 #!/bin/bash
 
+# Immediately exit on any error.
+set -e
+
+# Clone neobundle.
 git clone git@github.com:Shougo/neobundle.vim.git ~/.vim/bundle/neobundle.vim
 
 git -C ~/.vim/bundle/neobundle.vim checkout e4e6766
 
 echo
 echo 'NeoBundle successfully installed. Open vim to install bundles.'
+echo
+
+# Add phpctags directory to PATH.
+echo -e '\nPATH=$PATH:$HOME/.vim/bundle/phpctags_v0_5_1' >> ~/.bashrc
+
+echo
+echo '~/.vim/bundle/phpctags_v0_5_1 successfully added to PATH.'
 echo
