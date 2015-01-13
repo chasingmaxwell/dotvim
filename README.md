@@ -32,6 +32,8 @@ installed yet. You won't see them anymore after NeoBundle does its thing.
 to your PATH. If you are using bash, this was done for you when you ran the
 build script.
 
+6. Close and reopen vim or gvim.
+
 You're all set! The next time you open vim or gvim the below plugins will be
 installed and ready to use.
 
