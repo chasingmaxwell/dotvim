@@ -32,10 +32,12 @@ installed yet. You won't see them anymore after NeoBundle does its thing.
 to your PATH. If you are using bash, this was done for you when you ran the
 build script.
 
-6. Close and reopen vim or gvim.
+6. Source your .bashrc file (or equivalent if you're using a different shell).
+  ```
+  source ~/.bashrc
+  ```
 
-You're all set! The next time you open vim or gvim the below plugins will be
-installed and ready to use.
+7. Close and reopen vim or gvim.
 
 ## Plugins used
 
@@ -69,7 +71,7 @@ index file generator.
 16. [tagbar](https://github.com/majutsushi/tagbar) - Tag viewer.
 17. [tagbar-phpctags](https://github.com/vim-php/tagbar-phpctags.vim) - Add
 better php support for tagbar.
-18. [vdebug](https://github.com/joonty/vdebug) - Step debugger.
+18. [vdebug](https://github.com/joonty/vdebug) - Step debugging.
 19. [vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - Better css3
 and sass syntax support.
 20. [vim-fugitive](https://github.com/tpope/vim-fugitive) - A wrapper for some
