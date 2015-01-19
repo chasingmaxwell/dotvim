@@ -33,6 +33,7 @@ NeoBundle 'majutsushi/tagbar',            { 'rev': 'bfc121d' }
 NeoBundle 'joonty/vdebug',                { 'rev': 'b808b02' }
 NeoBundle 'hail2u/vim-css3-syntax',       { 'rev': '73ba250' }
 NeoBundle 'tpope/vim-fugitive',           { 'rev': '2c8461d' }
+NeoBundle 'elzr/vim-json',                { 'rev': '3b81264' }
 NeoBundle 'tpope/vim-sensible',           { 'rev': 'b30dcf3' }
 NeoBundle 'mhinz/vim-signify',            { 'rev': 'ae0efff' }
 NeoBundle 'Shougo/neosnippet.vim',        { 'rev': '811176b' }

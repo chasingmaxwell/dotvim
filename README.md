@@ -84,11 +84,12 @@ and sass syntax support.
 common git commands.
 21. [vim-javascript](https://github.com/pangloss/vim-javascript) - Add better
 JavaScript syntax and indentation handling.
-22. [vimproc](https://github.com/Shougo/vimproc.vim) - An asynchronous execution
+22. [vim-json](https://github.com/elzr/vim-json) - Add better JSON handling.
+23. [vimproc](https://github.com/Shougo/vimproc.vim) - An asynchronous execution
 library for vim.
-23. [vim-sensible](https://github.com/tpope/vim-sensible) - Provide sensible
+24. [vim-sensible](https://github.com/tpope/vim-sensible) - Provide sensible
 default configuration for vim.
-24. [vim-signify](https://github.com/mhinz/vim-signify) - Indicate changed lines
+25. [vim-signify](https://github.com/mhinz/vim-signify) - Indicate changed lines
 in version-controlled files.
 
 ## Private configuration
