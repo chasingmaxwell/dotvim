@@ -6,6 +6,20 @@ to make it better and contribute back!
 
 ![chasingmaxwell dotvim screenshot](/screenshot.png?raw=true "Schreenshot")
 
+## Prerequisites
+
+You must have [exuberant ctags](http://ctags.sourceforge.net) installed in order to make use of plugins like tagbar. The easiest way to install exuberant ctags is through a package manager.
+
+Using apt-get (linux):
+```
+sudo apt-get install ctags-exuberant
+```
+
+Using homebrew (Mac OS X):
+```
+brew install ctags-exuberant
+```
+
 ## Installation
 
 _Note:_ These directions are for unix-like operating systems. Some features
@@ -29,10 +43,10 @@ you should move it to ~/.vim-old before completing this step.
   ln -s ~/.vim/.vimrc ~/.vimrc
   ```
 
-4. Open vim or gvim. You may see a few error messages because plugins aren't
+4. Open vim or gvim/macvim. You may see a few error messages because plugins aren't
 installed yet. You won't see them anymore after NeoBundle does its thing.
 
-5. When prompted to install bundles, enter "y" (or click "Yes" in gvim).
+5. When prompted to install bundles, enter "y" (or click "Yes" in gvim/macvim).
 
 6. If you are using a shell other than bash, add `~/.vim/bundle/phpctags_v0_5_1`
 to your PATH. If you are using bash, this was done for you when you ran the
@@ -43,7 +57,7 @@ build script.
   source ~/.bashrc
   ```
 
-8. Close and reopen vim or gvim.
+8. Close and reopen vim or gvim/macvim.
 
 ## Plugins used
 
@@ -58,7 +72,7 @@ Drupal-specific configuration and features.
 5. [grep.vim](https://github.com/vim-scripts/grep.vim) - Search files for
 string.
 6. [molokai](https://github.com/tomasr/molokai) - My favorite color scheme. If
-it doesn't look great out-of-the-box, try gvim or use a terminal that supports
+it doesn't look great out-of-the-box, try gvim/macvim or use a terminal that supports
 256 colors.
 7. [neobundle](https://github.com/Shougo/neobundle.vim) - Manage plugins.
 8. [neocomplcache](https://github.com/Shougo/neocomplcache.vim) - Cached keyword
