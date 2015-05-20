@@ -22,6 +22,7 @@ NeoBundleFetch 'Shougo/neobundle.vim',    {
 NeoBundle 'pangloss/vim-javascript',      { 'rev': '977e220' }
 NeoBundle 'vim-scripts/AutoClose',        { 'rev': '1.2' }
 NeoBundle 'jlanzarotta/bufexplorer',      { 'rev': 'v7.4.6' }
+NeoBundle 'jimmyhchan/dustjs.vim',        { 'rev': '47aa098' }
 NeoBundle 'vim-scripts/grep.vim',         { 'rev': '1.11' }
 NeoBundle 'tomasr/molokai',               { 'rev': 'db8ce13' }
 NeoBundle 'Shougo/neocomplcache.vim',     { 'rev': 'd83bcbd' }
