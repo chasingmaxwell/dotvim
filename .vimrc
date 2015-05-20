@@ -131,7 +131,7 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 augroup StripTrailingWhitespaces
-  au! FileType c,cpp,java,php,ruby,python,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+  au! FileType c,cpp,java,php,php.drupal,ruby,python,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 augroup END
 
 " DiffOrig command
