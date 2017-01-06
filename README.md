@@ -12,21 +12,21 @@ to make it better and contribute back!
 
 2. You must have [exuberant ctags](http://ctags.sourceforge.net) installed in order to make use of plugins like tagbar. The easiest way to install exuberant ctags is through a package manager.
 
-Using apt-get (linux):
-```
-sudo apt-get install ctags-exuberant
-```
+  Using apt-get (linux):
+  ```
+  sudo apt-get install ctags-exuberant
+  ```
 
-Using homebrew (Mac OS X):
-```
-brew install ctags-exuberant
-```
+  Using homebrew (Mac OS X):
+  ```
+  brew install ctags-exuberant
+  ```
 
 3. Install jsctags.
 
-```
-npm install -g jsctags
-```
+  ```
+  npm install -g jsctags
+  ```
 
 ## Installation
 
