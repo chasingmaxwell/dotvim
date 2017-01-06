@@ -30,7 +30,7 @@ NeoBundle 'scrooloose/nerdcommenter',     { 'rev': '6549cfd' }
 NeoBundle 'scrooloose/nerdtree',          { 'rev': '3b98a7f' }
 NeoBundle 'StanAngeloff/php.vim',         { 'rev': 'd9be2fa' }
 NeoBundle 'scrooloose/syntastic',         { 'rev': 'b340672' }
-NeoBundle 'majutsushi/tagbar',            { 'rev': 'bfc121d' }
+NeoBundle 'majutsushi/tagbar',            { 'rev': '1c8feee' }
 NeoBundle 'joonty/vdebug',                { 'rev': 'b808b02' }
 NeoBundle 'hail2u/vim-css3-syntax',       { 'rev': '73ba250' }
 NeoBundle 'tpope/vim-fugitive',           { 'rev': '2c8461d' }
@@ -40,6 +40,13 @@ NeoBundle 'mhinz/vim-signify',            { 'rev': 'ae0efff' }
 NeoBundle 'Shougo/neosnippet.vim',        { 'rev': '811176b' }
 NeoBundle 'Shougo/neosnippet-snippets',   { 'rev': '1dcfdff' }
 NeoBundle 'ctrlpvim/ctrlp.vim',           { 'rev': 'b5d3fe6' }
+NeoBundle 'ternjs/tern_for_vim',          {
+\  'rev': '8364d69',
+\  'build': {
+\    'linux': 'npm install',
+\    'mac': 'npm install',
+\  }
+\}
 NeoBundle 'vim-php/phpctags',             {
 \  'rev': 'v0.5.1',
 \  'build_commands': 'make',
